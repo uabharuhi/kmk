@@ -20,3 +20,12 @@ image to hdf5 or pickle ?
 --> using hickle ... but not support 3.6
 --> using pickle
 
+
+define model
+save modle
+display data
+train
+
+
+#loss stuck after 2 epoch ...
+#learning rate too large .. relu dead?

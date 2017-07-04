@@ -39,7 +39,7 @@ class DataProcessTest(unittest.TestCase):
 		#convert image to data
 		data.dict2pkl(img_dict)
 
-		X,y = data.read_dataset_from_hkl()
+		X,y = data.read_dataset_from_pkl()
 
 		print(yome_a[0])
 		print('- - '*50)

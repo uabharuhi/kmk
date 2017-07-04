@@ -125,7 +125,7 @@ def dict2pkl(img_dict):
         pickle.dump(y_all,fy)
 
 #return 2 dicts X[data_set_name]
-def read_dataset_from_hkl():   
+def read_dataset_from_pkl():   
     X={}
     y={}
     dataset_names = ['train','val','test']
