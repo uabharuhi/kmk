@@ -4,7 +4,7 @@ import scrapy
 
 class ImageSpider(scrapy.Spider):
     name = 'Kumiko spider'
-    MAX_IMAGE_NUM = 50
+    MAX_IMAGE_NUM = 120
     #thread lock?
     character_img_cnt={}
 

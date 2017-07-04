@@ -1,0 +1,22 @@
+prepare data
+
+100 for  each category
+
+60 train 20 val 20 test
+# -->41 ...
+image resize to 128*128 
+image resides in ./image/character_name/resize/test,val,train
+convert binary data resides in ./data/X_test.hkl,X_val.hkl,X_train.hkl y_train (labels)....
+
+data validity check by human
+
+yome --> label 0
+reina --> label 1
+other --> label 2
+
+
+
+image to hdf5 or pickle ?
+--> using hickle ... but not support 3.6
+--> using pickle
+
