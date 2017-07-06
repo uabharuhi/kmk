@@ -29,3 +29,10 @@ train
 
 #loss stuck after 2 epoch ...
 #learning rate too large .. relu dead?
+
+# make a test
+# training ... then draw activations ..
+# load final model
+# get all layers output
+# display by matplot
+# display by other tools like tensorboard
