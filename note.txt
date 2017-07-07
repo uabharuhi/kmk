@@ -26,6 +26,12 @@ save modle
 display data
 train
 
+#use ipython notenook can save lots of time because
+#it only require load keras once!!
+
+#how to visualize activation?
+# mean ,std?
+# max min for gray scale??
 
 #loss stuck after 2 epoch ...
 #learning rate too large .. relu dead?
@@ -36,3 +42,11 @@ train
 # get all layers output
 # display by matplot
 # display by other tools like tensorboard
+
+
+#predict
+#preict and show result summary
+  - show total accuracy
+  - show every class accuracy
+#predict and show result detail ...every image in test set to a somewhat file
+

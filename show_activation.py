@@ -14,6 +14,8 @@
 from keras.models import load_model
 import data
 from keras import backend as K
+import matplotlib.pyplot as plt
+
 batch_size = 16
 num_classes = 3
 
@@ -52,10 +54,41 @@ print('shape of fl_a')
 print(f1_a.shape)
 
 print('conv activation')
-print(conv_a)
+#print(conv_a)
 print('- - '*50)
 print('f1')
 print(f1_a)
+
+#show by matplot
+#conv_a of first picture
+#(16, 128, 128, 16)
+#def show_conva_mean_std(conv_a,shape):
+#	f, axarr = plt.subplots(shape[0],shape[1])
+#	for i,ax in enumerate(axarr):
+#		i1 = i//4 #integer divide
+#		i2 = i%4
+#		axarr[i1,i2].imshow(conv_a[:,:,i], cmap=plt.get_cmap('gray'))
+def show_conva(pic_index,conv_a):
+	f, axarr = plt.subplots(4,4)
+	conv_a = conv_a[pic_index]
+	for i,ax in enumerate(axarr):
+		i1 = i//4 #integer divide
+		i2 = i%4
+		axarr[i1,i2].imshow(conv_a[:,:,i], cmap = plt.get_cmap('gray'),vmin=0.0, vmax=1.0)
+	f.savefig('conv%d.jpg'%pic_index)
+
+show_conva(0,conv_a)
+show_conva(1,conv_a)
+#dense
+#16*10
+#f, axarr = plt.subplots(4,4)
+#for i,ax in enumerate(axarr):
+	#i1 = i/5
+	#i2 = i%5
+	#axarr[i1,i2].imshow(f1_a[i], cmap=plt.get_cmap('gray'))
+
+#dense
+#plt.imshow(bg, cmap=plt.get_cmap('gray'), vmin=0, vmax=255)
 
 
 
