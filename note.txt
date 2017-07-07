@@ -37,7 +37,7 @@ train
 #learning rate too large .. relu dead?
 
 # make a test
-# training ... then draw activations ..
+# training ... then draw activations .. (memory too large cannot afford .... fxxx) 
 # load final model
 # get all layers output
 # display by matplot
